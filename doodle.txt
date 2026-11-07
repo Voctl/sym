@@ -1,0 +1,13 @@
+Sym - A lightweight language for symbolic and numerical mathematics.
+Doodle file
+
+-------------------------------------------------------------------------------------
+// so, i thought our math language will be smth like that:
+
+fn square(x: Real) -> Real = x * x;
+
+fn main() -> Int {
+    let x: Real = 12.0;
+    print(square(x));
+    return 0;
+}
