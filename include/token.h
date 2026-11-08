@@ -42,11 +42,11 @@ typedef enum {
 } TokenKind;
 
 typedef struct {
-    TokenKind kind;       /* Token type, e.g. TOKEN_NUMBER or TOKEN_PLUS */
-    const char *start;    /* Pointer to the first character in the source */
-    size_t length;        /* Number of characters in the token */
-    size_t line;          /* 1-based source line */
-    size_t column;        /* 1-based source column */
+    TokenKind kind;       //  Token type
+    const char *start;    //  Pointer to the first character in the source
+    size_t length;        //  Number of characters in the token
+    size_t line;          //  1-based source line
+    size_t column;        //  1-based source column
 } Token;
 
 
