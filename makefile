@@ -1,0 +1,9 @@
+#The makefile is currently quite simple,
+#We just take every .c file in src and compile it into one
+
+SRC := $(wildcard src/*.c)
+CC	:= gcc
+OUT	:= sym
+
+$(OUT) : $(SRC)
+	$(CC) -Iinclude -Wall -Wextra $(SRC) -o $(OUT)

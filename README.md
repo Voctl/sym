@@ -28,7 +28,9 @@ I'd like to eventually get into things like differentiation, expression simplifi
 
 ### Building
 
-Not available yet.
+``` makefile
+make
+```
 
 ### License
 
