@@ -1,5 +1,9 @@
 # sym
 
+<p align="center">
+<img src="docs/sym.jpg" width="450">
+
+
 A small math-oriented programming language written in C.
 
 I'm writing this mostly because I wanted to build my own language and experiment with symbolic and numerical math.
