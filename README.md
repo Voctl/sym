@@ -1,7 +1,7 @@
 # sym
 
 <p align="center">
-<img src="docs/sym.jpg" width="450">
+<img src="docs/sym.jpg" width="200">
 
 
 A small math-oriented programming language written in C.
