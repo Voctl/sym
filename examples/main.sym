@@ -1,0 +1,7 @@
+fn square(x: Real) -> Real = x * x;
+
+fn main() -> Int {
+    let x: Real = 12.0;
+    print(square(x));
+    return 0;
+}

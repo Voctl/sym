@@ -3,10 +3,9 @@
  * SPDX-License-Identifier: BSD-2-Clause
  */
 
-#ifndef TOKEN_H_
-#define TOKEN_H_
+#ifndef TOKENIZER_H_
+#define TOKENIZER_H_
 #include <stddef.h>
-
 
 /* yeah so its our first version - 0.1
    for tokenization, i made a simple tokenization
@@ -39,8 +38,16 @@ typedef enum {
     TOKEN_COLON,      /* : */
     TOKEN_SEMICOLON,  /* ; */
     TOKEN_COMMA       /* , */
+
+    // conditional things
+    TOKEN_IF,       /* if */
+    TOKEN_ELSE,     /* else */
+    TOKEN_WHILE,    /* while */
+    TOKEN_TRUE,     /* true */
+    TOKEN_FALSE     /* false */
 } TokenKind;
 
+// Struct of a Token
 typedef struct {
     TokenKind kind;       //  Token type
     const char *start;    //  Pointer to the first character in the source
@@ -49,6 +56,11 @@ typedef struct {
     size_t column;        //  1-based source column
 } Token;
 
+// Struct of a Lexer (its very simple for now)
+typedef struct Lexer {
+  const char* source;
+  size_t cursor;
+} Lexer;
 
 
-#endif // TOKEN_H_
+#endif // TOKENIZER_H_

@@ -3,12 +3,12 @@
  * SPDX-License-Identifier: BSD-2-Clause
  */
 
-// i will try to make a REPL for sym here
-
+// i will try to write a REPL for sym here
 
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+#include "tokenizer.h"
 
 #define MAX_INPUT 1024
 
