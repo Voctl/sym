@@ -6,4 +6,6 @@ CC	:= gcc
 OUT	:= sym
 
 $(OUT) : $(SRC)
-	$(CC) -Iinclude -Wall -Wextra $(SRC) -o $(OUT)
+	$(CC) -Iinclude -Wall -Wextra $(SRC) -o $(OUT) -lm
+clean:
+	rm -rf sym
